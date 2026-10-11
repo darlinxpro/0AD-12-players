@@ -14,7 +14,10 @@ Instalacion
      ModernGUI y de 12jugadores.
    Si el orden no es correcto, al empezar la partida sale un aviso en el chat.
 
-Todos los jugadores de la partida necesitan este mod (misma version).
+Cualquiera puede entrar en tu sala aunque no tenga el mod, y tu puedes entrar en salas
+de otros. Para empezar una partida de MAS DE 8 jugadores, todos los de la sala
+deben tenerlo: si falta alguien, el boton de empezar se bloquea y el aviso en rojo
+dice quien. (Al entrar en una sala, el mod lo anuncia solo en el chat.)
 
 Notas
 -----

@@ -4,7 +4,7 @@
 
 Mod para [0 A.D.](https://play0ad.com) **0.28.0** que sube el límite de jugadores de 8 a 12 y adapta la interfaz del juego para que todo funcione con más jugadores.
 
-> *English summary: allows up to 12 players (5v5, 6v6) in 0 A.D. 0.28.0 random maps. Install the `12jugadores` folder into your 0 A.D. `mods` folder and enable it in Mod Selection. All players in a match need the same version.*
+> *English summary: allows up to 12 players (5v5, 6v6) in 0 A.D. 0.28.0 random maps. Install the `12jugadores` folder into your 0 A.D. `mods` folder and enable it in Mod Selection. Anyone can join your rooms without the mod; games with more than 8 players can only start when everyone in the room has it.*
 
 ---
 
@@ -16,11 +16,13 @@ Mod para [0 A.D.](https://play0ad.com) **0.28.0** que sube el límite de jugador
   - Con más de 8 jugadores, el panel de jugadores crece y el resumen usa filas más bajas para que quepan todos. Con 8 o menos, todo se ve como siempre.
 - **Corrección de la carga colgada**: la colocación de jugadores del juego (`groupPlayersByArea`) probaba todas las permutaciones posibles (con 12 jugadores, 479 millones) y la carga se quedaba parada, por ejemplo con la colocación "río". El mod usa una búsqueda rápida para más de 8 jugadores (unos milisegundos) y deja el método original para 8 o menos.
 - **Aviso de tamaño mínimo** (en rojo, en la configuración de la partida) si el mapa es demasiado pequeño para tantos jugadores.
+- **No bloquea a nadie**: cualquiera puede entrar en tu sala aunque no tenga el mod, y tú puedes entrar en salas de otros. Solo las partidas de **más de 8 jugadores** exigen que todos lo tengan (ver abajo).
 
 ## Requisitos
 
 - **0 A.D. 0.28.0**
-- **Todos los jugadores de la partida** deben tener el mod, **en la misma versión**. El juego lo comprueba al entrar en la partida.
+- Para partidas de **8 jugadores o menos**: no hace falta que los demás tengan el mod.
+- Para partidas de **más de 8 jugadores**: **todos los de la sala** (jugadores y observadores) deben tenerlo. Al entrar en una sala, el mod lo anuncia automáticamente en el chat; si falta alguien, el botón **Empezar partida** se bloquea y el aviso en rojo dice quién (a quien no lo tenga se le quedaría colgada la carga).
 
 ---
 
@@ -104,6 +106,8 @@ Y estos scripts propios:
 | `gui/gamesetup/.../GameSettingWarning~12jugadores.js` | Aviso de tamaño mínimo de mapa |
 | `gui/summary/summary~12jugadores.js` | Filas más bajas en el resumen con más de 8 |
 | `gui/session/session~12jugadores.js` | Créditos en la consola y aviso de orden con ModernGUI |
+| `gui/gamesetup/.../Buttons/StartGameButton~12jugadores.js` | Anuncio del mod en la sala y bloqueo de partidas de más de 8 si alguien no lo tiene |
+| `gui/gamesetup/.../ChatMessages/ClientChat~zz12jugadores.js` | Oculta ese anuncio a quien ya tiene el mod |
 
 ---
 

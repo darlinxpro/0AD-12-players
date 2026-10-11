@@ -63,6 +63,9 @@ function twelvePlayers_renderWarning()
 	const sizeWarning = twelvePlayers_sizeWarning();
 	if (sizeWarning)
 		captions.push(sizeWarning);
+	const withoutMod = typeof twelvePlayers_playersWithoutMod == "function" ? twelvePlayers_playersWithoutMod() : [];
+	if (withoutMod.length)
+		captions.push("Sin el mod 12jugadores: " + withoutMod.join(", ") + ".");
 
 	const caption = captions.join(" ");
 	warning.caption = caption;
