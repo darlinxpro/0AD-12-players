@@ -8,11 +8,9 @@ Instalacion
 1. Copia la carpeta "12jugadores" en Documents\My Games\0ad\mods\
    (o haz doble clic en el archivo .pyromod).
 2. En el juego: Configuracion > Seleccion de mods > activa "12 jugadores".
-3. Si usas ModernGUI:
-   - con ModernGUI ya adaptado a 12 jugadores: pon 12jugadores ANTES de ModernGUI;
-   - con ModernGUI original: activa tambien "12jugadores_moderngui", despues de
-     ModernGUI y de 12jugadores.
-   Si el orden no es correcto, al empezar la partida sale un aviso en el chat.
+3. Si usas ModernGUI: pon 12jugadores DESPUES de ModernGUI. Con 8 jugadores o menos
+   funciona en cualquier orden; con mas de 8, si el orden no es correcto, al empezar
+   la partida sale un aviso en el chat.
 
 Cualquiera puede entrar en tu sala aunque no tenga el mod, y tu puedes entrar en salas
 de otros. Para empezar una partida de MAS DE 8 jugadores, todos los de la sala

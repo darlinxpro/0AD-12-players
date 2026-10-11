@@ -8,7 +8,7 @@
  * - El anfitrion apunta quien lo ha anunciado y, con mas de 8 jugadores,
  *   bloquea "Empezar partida" mientras alguien de la sala no lo tenga.
  */
-var TWELVE_PLAYERS_VERSION = "0.3.0";
+var TWELVE_PLAYERS_VERSION = "0.3.1";
 var TWELVE_PLAYERS_ANNOUNCE = "[12jugadores] mod instalado";
 
 var g_TwelvePlayersNet = {

@@ -1,20 +1,23 @@
 /**
- * 12jugadores: si se carga DESPUES de ModernGUI (y sin el complemento
- * 12jugadores_moderngui), los paneles del juego base de este mod sustituyen a
- * los de ModernGUI y aparecen errores (p. ej. "killCount not found"). Con
- * ModernGUI, 12jugadores debe ir ANTES de ModernGUI (si ModernGUI ya trae los
- * paneles de 12) o activar el complemento despues de ambos. Avisa en el chat.
+ * 12jugadores: creditos en la consola al empezar la partida y, con ModernGUI,
+ * aviso si el orden de mods no permite partidas de mas de 8 jugadores.
+ *
+ * El mod ya no sustituye los paneles de seleccion (las barras de captura extra
+ * se anaden en capture_bars_12jugadores.xml), asi que con ModernGUI no da
+ * errores en ningun orden. Pero para MAS DE 8 jugadores, 12jugadores debe ir
+ * DESPUES de ModernGUI, para que se usen sus listas de 12 filas (jugadores,
+ * diplomacia, resumen) en lugar de las de 8 de ModernGUI.
  */
 function twelvePlayers_checkModernGUI()
 {
 	const mods = Engine.GetEngineInfo().mods.map(mod => mod.name);
 	const modernGUI = mods.indexOf("ModernGUI");
-	if (modernGUI == -1 || mods.indexOf("12jugadores_moderngui") != -1 || mods.indexOf("12jugadores") < modernGUI)
+	if (modernGUI == -1 || mods.indexOf("12jugadores") > modernGUI || g_Players.length - 1 <= 8)
 		return;
 
 	g_Chat.ChatMessageHandler.handleMessage({
 		"type": "system",
-		"text": "[12 jugadores] Con ModernGUI, pon 12jugadores ANTES de ModernGUI en Selección de mods (o activa el complemento 12jugadores_moderngui después de ambos) para evitar errores en los paneles."
+		"text": "[12 jugadores] Con ModernGUI y más de 8 jugadores, pon 12jugadores DESPUÉS de ModernGUI en Selección de mods para evitar errores en los paneles."
 	});
 }
 

@@ -38,6 +38,8 @@
 		<object name="diplomacyHeaderTribute" size="430 0 100%-70 100%" type="text" style="DiplomacyText" text_align="center">
 			<translatableAttribute id="caption">Tribute</translatableAttribute>
 		</object>
+		<!-- 12jugadores: ModernGUI usa este objeto sin comprobar si existe; oculto para el juego base. -->
+		<object name="displayEnemyTributeButtons" type="checkbox" checked="false" hidden="true" style="ModernTickBox" size="0 0 0 0"/>
 	</object>
 
 	<object size="32 64 100%-32 384">

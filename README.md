@@ -80,7 +80,7 @@ Si el mapa es más pequeño, aparece un aviso en rojo en la parte de abajo.
 
 - **Solo mapas aleatorios.** Los mapas de escaramuza y escenario tienen sus 8 huecos fijos.
 - **Rendimiento:** con 12 ejércitos, la partida va al ritmo del ordenador más lento.
-- **ModernGUI:** ModernGUI reemplaza varios de los mismos paneles. Pon **12jugadores antes de ModernGUI** en la lista de mods; aun así, los paneles propios de ModernGUI solo tienen 8 filas y pueden dar errores con más de 8 jugadores. Al empezar la partida, el mod avisa en el chat si el orden no es el correcto.
+- **ModernGUI:** pon **12jugadores después de ModernGUI** en la lista de mods. Con 8 jugadores o menos funciona en cualquier orden. Con más de 8, si el orden no es correcto, el mod avisa en el chat al empezar la partida. Los paneles de estadísticas propios de ModernGUI tienen 8 filas, así que con más de 8 jugadores pueden faltar filas en esas estadísticas.
 
 ---
 
@@ -95,7 +95,7 @@ El mod contiene copias modificadas de estos archivos de 0 A.D.:
 | `gui/gamesetup/.../PerPlayer/PlayersPanel.xml` | 12 filas de jugador |
 | `gui/session/diplomacy/DiplomacyDialog.xml` | 12 filas |
 | `gui/summary/summary.xml` | 12 filas por equipo |
-| `gui/session/selection_panels_middle/*_details_area.xml`, `gui/session/PanelEntities.xml` | 13 segmentos en las barras de captura (Gaia + 12) |
+| `gui/session/PanelEntities.xml` | 13 segmentos en las barras de captura del panel de héroes (Gaia + 12) |
 
 Y estos scripts propios:
 
@@ -105,6 +105,7 @@ Y estos scripts propios:
 | `gui/gamesetup/.../PlayerFrame~12jugadores.js` | Agranda el panel de jugadores con más de 8 |
 | `gui/gamesetup/.../GameSettingWarning~12jugadores.js` | Aviso de tamaño mínimo de mapa |
 | `gui/summary/summary~12jugadores.js` | Filas más bajas en el resumen con más de 8 |
+| `gui/session/selection_panels_middle/capture_bars_12jugadores.xml` | Añade (sin reemplazar nada) las barras de captura de los jugadores 9-12 en la selección |
 | `gui/session/session~12jugadores.js` | Créditos en la consola y aviso de orden con ModernGUI |
 | `gui/gamesetup/.../Buttons/StartGameButton~12jugadores.js` | Anuncio del mod en la sala y bloqueo de partidas de más de 8 si alguien no lo tiene |
 | `gui/gamesetup/.../ChatMessages/ClientChat~zz12jugadores.js` | Oculta ese anuncio a quien ya tiene el mod |

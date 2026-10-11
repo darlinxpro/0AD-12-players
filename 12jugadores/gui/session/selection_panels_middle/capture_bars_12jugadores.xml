@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+	12jugadores: las barras de captura de la seleccion (captureBar[n] y
+	captureBarMultiple[n]) solo existen para Gaia + 8 jugadores (0..8), pero el
+	juego las recorre para todos los jugadores de la partida. Este archivo
+	ANADE (no reemplaza) las de los jugadores 9 a 12, invisibles (alto 0), para
+	que no haya errores con mas de 8 jugadores. Al no sustituir ningun archivo,
+	es compatible con el juego base y con ModernGUI en cualquier orden.
+-->
+<object name="twelvePlayersExtraCaptureBars" size="0 0 0 0" ghost="true">
+	<object type="image" ghost="true" name="captureBar[9]" hidden="true"/>
+	<object type="image" ghost="true" name="captureBar[10]" hidden="true"/>
+	<object type="image" ghost="true" name="captureBar[11]" hidden="true"/>
+	<object type="image" ghost="true" name="captureBar[12]" hidden="true"/>
+	<object type="image" ghost="true" name="captureBarMultiple[9]" hidden="true"/>
+	<object type="image" ghost="true" name="captureBarMultiple[10]" hidden="true"/>
+	<object type="image" ghost="true" name="captureBarMultiple[11]" hidden="true"/>
+	<object type="image" ghost="true" name="captureBarMultiple[12]" hidden="true"/>
+</object>

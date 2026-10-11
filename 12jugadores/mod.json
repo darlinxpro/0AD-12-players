@@ -1,8 +1,8 @@
 {
 	"name": "12jugadores",
-	"version": "0.3.0",
+	"version": "0.3.1",
 	"label": "12 jugadores",
-	"description": "Permite partidas de hasta 12 jugadores (5v5, 6v6) en mapas aleatorios. Cualquiera puede entrar en tu sala aunque no tenga el mod; para empezar una partida de mas de 8 jugadores, todos deben tenerlo (si no, el boton de empezar se bloquea y avisa de quien falta). Descarga: https://github.com/darlinxpro/0AD-12-players . Con ModernGUI, ponlo antes de ModernGUI. Made by Darlinxpro. Basado en archivos de 0 A.D. (GPL v2).",
+	"description": "Permite partidas de hasta 12 jugadores (5v5, 6v6) en mapas aleatorios. Cualquiera puede entrar en tu sala aunque no tenga el mod; para empezar una partida de mas de 8 jugadores, todos deben tenerlo (si no, el boton de empezar se bloquea y avisa de quien falta). Descarga: https://github.com/darlinxpro/0AD-12-players . Con ModernGUI, ponlo despues de ModernGUI. Made by Darlinxpro. Basado en archivos de 0 A.D. (GPL v2).",
 	"author_name": "Darlinxpro",
 	"url": "https://github.com/darlinxpro/0AD-12-players",
 	"ignoreInCompatibilityChecks": true,
