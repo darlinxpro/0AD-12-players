@@ -2,8 +2,9 @@
 	"name": "12jugadores",
 	"version": "0.2.0",
 	"label": "12 jugadores",
-	"description": "Permite partidas de hasta 12 jugadores (5v5, 6v6) en mapas aleatorios. Compatible con la interfaz normal de 0 A.D.; para ModernGUI activa tambien 12jugadores_moderngui. Todos los jugadores de la partida deben tenerlo. Made by Darlinxpro. Basado en archivos de 0 A.D. (GPL v2).",
+	"description": "Permite partidas de hasta 12 jugadores (5v5, 6v6) en mapas aleatorios. Todos los jugadores de la partida deben tenerlo, en la misma version. Descarga e instrucciones: https://github.com/darlinxpro/0AD-12-players . Con ModernGUI, ponlo antes de ModernGUI. Made by Darlinxpro. Basado en archivos de 0 A.D. (GPL v2).",
 	"author_name": "Darlinxpro",
+	"url": "https://github.com/darlinxpro/0AD-12-players",
 	"dependencies": [
 		"0ad>=0.28.0"
 	]
