@@ -1,0 +1,36 @@
+12 jugadores — Made by Darlinxpro
+==================================
+
+Permite partidas de hasta 12 jugadores (5v5, 6v6) en 0 A.D. 0.28.
+
+Instalacion
+-----------
+1. Copia la carpeta "12jugadores" en Documents\My Games\0ad\mods\
+   (o haz doble clic en el archivo .pyromod).
+2. En el juego: Configuracion > Seleccion de mods > activa "12 jugadores".
+3. Si usas ModernGUI:
+   - con ModernGUI ya adaptado a 12 jugadores: pon 12jugadores ANTES de ModernGUI;
+   - con ModernGUI original: activa tambien "12jugadores_moderngui", despues de
+     ModernGUI y de 12jugadores.
+   Si el orden no es correcto, al empezar la partida sale un aviso en el chat.
+
+Todos los jugadores de la partida necesitan este mod (misma version).
+
+Notas
+-----
+- Solo mapas aleatorios (los mapas de escaramuza/escenario tienen 8 huecos fijos).
+  Probado en Mainland y Mainland Balanced (feldmap).
+- Tamano minimo de mapa: 9-10 jugadores Medium, 11-12 Large; mapas "Balanced" un
+  tamano mas. Si es menor, sale un aviso en rojo en la configuracion de partida.
+- Corrige la colocacion de jugadores del juego (groupPlayersByArea), que con mas de
+  8 jugadores probaba todas las permutaciones (12! = 479 millones) y dejaba la
+  carga colgada, p. ej. con la colocacion "rio".
+- Con mas de 8 jugadores, el panel de jugadores de la configuracion de partida
+  crece y el resumen final usa filas mas bajas para que quepan todos.
+
+Creditos y licencia
+-------------------
+Mod hecho por Darlinxpro.
+Contiene archivos modificados de 0 A.D. (Wildfire Games), distribuidos bajo la
+licencia GNU GPL v2 o posterior; este mod se distribuye bajo la misma licencia.
+https://play0ad.com
